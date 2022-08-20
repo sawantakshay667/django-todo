@@ -9,7 +9,7 @@ pipeline {
         stage('build') {
             steps {
                 sh 'sudo docker build . -t img '
-                sh 'sudo docker rm $(docker ps -a) '
+                sh 'sudo docker rm -f auto '
             }
         }
         stage('run') {

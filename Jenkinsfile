@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'sudo docker rmi -f img '
                 sh 'sudo docker build . -t img '
-                sh 'sudo docker rm -f auto '
+                sh 'sudo docker rm -f auto ' 
             }
         }
         stage('run') {

@@ -1,11 +1,6 @@
 pipeline {
     agent any 
     stages {
-        stage('update') {
-            steps {
-                sh 'sudo apt update '
-            }
-        }
         stage('build') {
             steps {
                 sh 'sudo docker rmi -f img '

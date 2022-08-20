@@ -4,7 +4,6 @@ pipeline {
         stage('update') {
             steps {
                 sh 'sudo apt update '
-                echo 
             }
         }
         stage('build') {

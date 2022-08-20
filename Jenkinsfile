@@ -14,7 +14,7 @@ pipeline {
         }
         stage('run') {
             steps {
-                sh 'sudo docker run -d --name auto img '
+                sh 'sudo docker run -d -p 8000:8000 --name auto img '
             }
         }
     }
